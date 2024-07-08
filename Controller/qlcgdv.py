@@ -71,7 +71,7 @@ class QLCGDV:
         if conn:
             cursor = conn.cursor()
             try:
-                cursor.execute("SELECT * FROM dichvu WHERE ma_dv=%s", (ma_dv,))  # Search service by service code
+                cursor.execute("SELECT * FROM dichvu WHERE ma_dv=%s", (ma_dv,)) 
                 result = cursor.fetchone()
                 return result  # Return the result directly (it could be None)
             except Exception as e:
@@ -79,5 +79,6 @@ class QLCGDV:
             finally:
                 self.db_manager.closeConnection()
         return None  # Return None if connection failed
+       
 
 

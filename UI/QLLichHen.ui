@@ -6,12 +6,15 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>667</width>
+    <width>663</width>
     <height>514</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(170, 255, 255);</string>
   </property>
   <widget class="QFrame" name="frame">
    <property name="geometry">
@@ -155,7 +158,7 @@
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true"/>
+    <string notr="true">background-color: rgb(213, 236, 255);</string>
    </property>
    <property name="text">
     <string>Thêm </string>
@@ -171,7 +174,7 @@
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true"/>
+    <string notr="true">background-color: rgb(213, 236, 255);</string>
    </property>
    <property name="text">
     <string>Xóa </string>
@@ -187,51 +190,11 @@
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true"/>
+    <string notr="true">background-color: rgb(213, 236, 255);</string>
    </property>
    <property name="text">
     <string>Sửa </string>
    </property>
-  </widget>
-  <widget class="QTableWidget" name="tableWidget">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>250</y>
-     <width>661</width>
-     <height>251</height>
-    </rect>
-   </property>
-   <column>
-    <property name="text">
-     <string>Mã lịch hẹn</string>
-    </property>
-   </column>
-   <column>
-    <property name="text">
-     <string>Tên KH</string>
-    </property>
-   </column>
-   <column>
-    <property name="text">
-     <string>SĐT</string>
-    </property>
-   </column>
-   <column>
-    <property name="text">
-     <string>Địa chỉ </string>
-    </property>
-   </column>
-   <column>
-    <property name="text">
-     <string>Ngày hẹn</string>
-    </property>
-   </column>
-   <column>
-    <property name="text">
-     <string>Trạng thái</string>
-    </property>
-   </column>
   </widget>
   <widget class="QComboBox" name="comboBox">
    <property name="geometry">
@@ -310,6 +273,59 @@
      <height>20</height>
     </rect>
    </property>
+  </widget>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>-1</x>
+     <y>280</y>
+     <width>671</width>
+     <height>241</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>671</width>
+      <height>231</height>
+     </rect>
+    </property>
+    <column>
+     <property name="text">
+      <string>Mã lịch hẹn</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Tên KH</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>SĐT</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Địa chỉ </string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Ngày hẹn</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Trạng thái</string>
+     </property>
+    </column>
+   </widget>
   </widget>
  </widget>
  <resources/>
